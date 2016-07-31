@@ -8,17 +8,15 @@
 
 ## Setup/Installation Requirements
 
-In the command line, clone the git repository to a directory (git clone https://github.com/AdamCraig/pdx-foods). Navigate to the local repository's folder and use gradle to run the server (gradle run). Then, in an internet browser, access "localhost:4567" (or your custom port)
-
-The project comes with two .sql files, pdx_foods and pdx_foods_test. Only pdx_foods is needed for normal functionality with the pre-seeded stylists (and their unique backgrounds). Alternatively, one could set up the database tables in the command line as follows:
-
-In PSQL:
-
-CREATE DATABASE pdx_foods;
-
-CREATE TABLE stylists (id serial PRIMARY KEY, name varchar);
-
-CREATE TABLE clients (id serial PRIMARY KEY, name varchar, stylist_id int);
+* _SETTING UP THE DATABASE AND TEST DATABASE_
+* _Clone repository to desktop_
+* _Use console to enter directory with all files_
+* _In a new console window run the command 'postgres' and keep running_
+* _In a new console window run the command 'psql' then 'CREATE DATABASE pdx_foods;'_
+* _In bash console run the command 'psql pdx_foods < pdx_foods.sql'_
+* _RUNNING THE WEB APP_
+* _In the console, navigate to the project folder, then run the command 'gradle run'_
+* _Go to http://localhost:4567/_
 
 ## Known Bugs
 
